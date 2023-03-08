@@ -1,0 +1,228 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.nav-bar1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: rgb(33, 61, 71);
+    background-color: white;
+}
+
+.icoan1{
+    padding: 3px 20px;
+    background-color: rgb(62, 138, 199);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.nav-bar2{
+    background-image: linear-gradient(to top left, rgb(50, 28, 98), purple) ;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+   padding: 15px 0px;
+    
+}
+
+nav{
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+
+.con{
+    display: flex;
+    
+}
+
+.icoan2{
+    padding-left: 50px;
+}
+
+.nav-bar2 p{
+    margin-bottom: 0 !important;
+}
+
+.nav-bar3{
+    background-image: linear-gradient(to top left, rgb(172, 231, 64), rgb(11, 252, 196)) ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.nav-bar3 dl, ol, ul{
+    margin-bottom: 0 !important;
+}
+
+.nav-bar3 ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-bar3 ul li a{
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    
+}
+
+.nav-bar3 ul li a:hover{
+    padding: 5px 7px;
+    background-color: rgb(124, 70, 175);
+    color: black;
+    border-radius: 50px;
+}
+
+.banner{
+    width: 100% ;
+    height: 800px;
+    background-image: url("image/gear1.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    animation: image_change 20s linear 5s infinite;
+    
+}
+@keyframes image_change {
+    0%{
+        background-image: url("image/gear1.jpg");
+    }
+    25%{
+        background-image: url("image/gerar2.jpg");
+    }
+    50%{
+        background-image: url("image/Gear3.jpg");
+    }
+    100%{
+        background-image: url("image/Gear4.jpg");
+    }
+}
+
+
+
+.trek_name{
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    color: rgb(255, 255, 254);
+    font-weight: bolder;
+    background-color: rgba(65, 54, 54, 0.2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+
+.trek_name button{
+    background-color: yellow;
+    padding: 5px 10px;
+    margin: 20px 50px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 20px;
+}
+
+
+main{
+    background-color: rgb(223, 231, 243);
+    padding: 30px 0px;
+}
+
+.rent{
+    margin: 0px 105px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jacket,.backpack,.lamp{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(249, 249, 251);
+    padding: 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+.lamp button{
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: green;
+    border: none;
+    font-weight: bold;
+}
+
+.jacket button{
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: green;
+    border: none;
+    font-weight: bold;
+}
+
+.backpack button{
+    padding: 5px 20px;
+    border-radius: 20px;
+    background-color: green;
+    border: none;
+    font-weight: bold;
+}
+
+#more{
+    background-color: darkgoldenrod;
+    margin-top: 20px;
+   margin-left:50%;
+   padding: 15px 35px;
+   border: none;
+   font-weight: bolder;
+   border-radius: 10px;
+  
+}
+
+.rent1{
+    margin: 10px 105px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 20px 0px;
+    }
+
+.about a,.quick a,.important a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width:992px){
+
+    .nav-bar1{
+        flex-wrap: wrap;
+    }
+
+    .nav-bar2{
+        flex-wrap: wrap;
+    }
+
+    .info{
+        flex-wrap: wrap;
+    }
+
+    .trek_info{
+        flex-wrap: wrap;
+    }
+
+ 
+}

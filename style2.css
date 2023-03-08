@@ -1,0 +1,186 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.nav-bar1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: rgb(33, 61, 71);
+    background-color: white;
+}
+
+.icoan1{
+    padding: 3px 20px;
+    background-color: rgb(62, 138, 199);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.nav-bar2{
+    background-image: linear-gradient(to top left, rgb(50, 28, 98), purple) ;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+   padding: 15px 0px;
+    
+}
+
+.con{
+    display: flex;
+    
+}
+
+.icoan2{
+    padding-left: 50px;
+}
+
+.nav-bar2 p{
+    margin-bottom: 0 !important;
+}
+
+
+
+
+
+nav{
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+.pic1{
+    width: 100% ;
+    height: 700px;
+    background-image: url("image/kedar.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.trek_name{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    color: rgb(12, 8, 40);
+}
+
+main{
+    margin: 20px 70px;
+}
+
+.info{
+    margin: 20px 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.trek_info{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.difficulty{
+    width: 50%;
+}
+
+.difficulty p{
+    color: blue;
+}
+
+.duration{
+    width: 50%;
+}
+
+.duration p{
+    color: blue;
+}
+
+.cost{
+    width: 30%;
+    background-color: yellowgreen;
+    padding: 10px 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#date{
+    background-color: blueviolet;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+#book{
+    background-color:darkgreen;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-left: 70px;
+    border: none;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.info_trek::before{
+    content: '';
+    background-image: url(image/kedar1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 91%;
+    height: 500px;
+    opacity: 0.55;
+    z-index: -10;
+}
+
+.trek_map{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Itinerary{
+    width: 40%;
+}
+
+.map{
+    width: 40%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 20px 0px;
+    }
+
+.about a,.quick a,.important a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width:992px){
+
+    .nav-bar1{
+        flex-wrap: wrap;
+    }
+
+    .nav-bar2{
+        flex-wrap: wrap;
+    }
+
+    .info{
+        flex-wrap: wrap;
+    }
+
+    .trek_info{
+        flex-wrap: wrap;
+    }
+
+ 
+}

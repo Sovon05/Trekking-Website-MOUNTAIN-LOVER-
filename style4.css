@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.nav-bar1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: rgb(33, 61, 71);
+    background-color: white;
+}
+
+.icoan1{
+    padding: 3px 20px;
+    background-color: rgb(62, 138, 199);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.nav-bar2{
+    background-image: linear-gradient(to top left, rgb(50, 28, 98), purple) ;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+   padding: 15px 0px;
+    
+}
+
+.con{
+    display: flex;
+    
+}
+
+.icoan2{
+    padding-left: 50px;
+}
+
+.nav-bar2 p{
+    margin-bottom: 0 !important;
+}
+
+nav{
+    position: sticky;
+    z-index: 2;
+    top: 0;
+}
+
+.banner{
+    width: 100% ;
+    height: 800px;
+    background-image: url("image/gear1.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    animation: image_change 20s linear 5s infinite;
+    
+}
+@keyframes image_change {
+    0%{
+        background-image: url("image/list5.jpg");
+    }
+    25%{
+        background-image: url("image/list3.jpg");
+    }
+    50%{
+        background-image: url("image/list1.jpg");
+    }
+    75%{
+        background-image: url("image/list4.jpg");
+    }
+    100%{
+        background-image: url("image/list2.jpg");
+    }
+}
+
+
+
+.trek_name{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    color: rgb(255, 255, 254);
+    font-weight: bolder;
+    background-color: rgba(65, 54, 54, 0.2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+}
+
+.trek_name button{
+    background-color: yellow;
+    padding: 5px 10px;
+    margin: 20px 50px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 20px;
+}
+
+main{
+    margin: 50px 10%;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 20px 0px;
+    }
+
+.about a,.quick a,.important a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (max-width:992px){
+
+    .nav-bar1{
+        flex-wrap: wrap;
+    }
+
+    .nav-bar2{
+        flex-wrap: wrap;
+    }
+
+    .info{
+        flex-wrap: wrap;
+    }
+
+    .trek_info{
+        flex-wrap: wrap;
+    }
+
+ 
+}
